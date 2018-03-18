@@ -1,12 +1,15 @@
 #topSection{
     height:40px;
-    widows: 100%;
+    width: 100%;
     background-color:rgba(0, 32, 32, 0.575);
 }
 
 
 #picture{
+    width: 100%;
     background-image: url("assets/mainPic.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
     height: 440px;
     opacity: 0.8;
 }
@@ -27,8 +30,11 @@ h4{
 }
 
 #questionSection{
+    width:100%;
     background-color: rgb(250, 241, 229);
     background-image: url("assets/USmap.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 #OneQuestion{
@@ -50,8 +56,4 @@ h4{
     border: 1px solid #ccc;
     height: 60px;
     clear: both;
-}
-
-.rest{
-
 }
