@@ -5,17 +5,23 @@ var questionContainer = $("#questionContainer");
 var rest = $("#rest");
 
 var all_questions = ["Which general area would you like to move to?", 
-                    "second question?"];
+                    "second question?","third question?","fourth question?", "last question?"];
 var question_options = [
     ["west coast", "South", "midwest","northeast","pacific"],
-    ["options", 4],
-    [5, 6]
+    ["options", "options"],
+    ["options", "options"],
+    ["options", "options"],
+    ["options", "options"]
   ];
 
 
 
 function changeQuestion() {
     stage++;
+    if (stage >= all_questions.length){
+        selectTab.hide();
+        questionSection.hide();
+    }
     selectTab.empty();
     selectTab.hide();
     //set up the new options
